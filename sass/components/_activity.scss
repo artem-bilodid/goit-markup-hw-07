@@ -1,0 +1,23 @@
+.activity {
+  position: relative;
+}
+
+.activity__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity__title {
+  font-size: 14px;
+  line-height: 1.143;
+
+  text-transform: uppercase;
+
+  color: var(--background-dark-primary-text-color);
+}

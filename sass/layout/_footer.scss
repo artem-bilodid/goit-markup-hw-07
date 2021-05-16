@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: var(--background-dark-primary-text-color);
+  background-color: var(--background-dark-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.join-us-container {
+  @extend %footer-container-item;
+}
+
+.footer__header {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

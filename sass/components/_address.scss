@@ -1,0 +1,17 @@
+.address {
+  color: var(--footer-secondary-text-color);
+  font-style: normal;
+}
+
+.address-container {
+  @extend %footer-container-item;
+}
+
+.address__text {
+  color: var(--background-dark-primary-text-color);
+  margin-bottom: 9px;
+}
+
+.address__contacts .contacts__item:not(:last-child) {
+  margin-bottom: 6px;
+}
