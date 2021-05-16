@@ -1,0 +1,10 @@
+.contacts__link {
+  @extend %animated-color-link;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__icon {
+  --color3: currentColor;
+  margin-right: 10px;
+}

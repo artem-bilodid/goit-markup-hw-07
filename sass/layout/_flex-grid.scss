@@ -9,11 +9,15 @@
   margin-top: var(--flex-grid-margin);
   margin-left: var(--flex-grid-margin);
 
-  &--3-col {
-    flex-basis: calc((100% - 3 * var(--flex-grid-margin)) / 3);
+  .flex-grid--3-col & {
+    @include gridItemWidthPerColumn($columnsCount: 3);
   }
 
-  &--4-col {
-    flex-basis: calc((100% - 4 * var(--flex-grid-margin)) / 4);
+  .flex-grid--4-col & {
+    @include gridItemWidthPerColumn($columnsCount: 4);
+  }
+
+  .flex-grid--6-col & {
+    @include gridItemWidthPerColumn($columnsCount: 6);
   }
 }

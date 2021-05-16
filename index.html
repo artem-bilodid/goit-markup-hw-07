@@ -16,30 +16,26 @@
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a class="logo navigation__logo link" href="./"
+          <a class="logo navigation__logo link logo__link" href="./"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="list menu">
             <li class="menu__item">
-              <a
-                class="link header-link header-link--current"
-                href="./index.html"
+              <a class="link menu__link menu__link--current" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="menu__item">
-              <a class="link header-link" href="./portfolio.html">Портфолио</a>
+              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
-              <a class="link header-link" href="">Контакты</a>
+              <a class="link menu__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list contacts header__contacts">
           <li class="contacts__item">
-            <a
-              class="link header-link contacts__item-link"
-              href="mailto:info@devstudio.com"
+            <a class="link contacts__link" href="mailto:info@devstudio.com"
               ><svg width="16" height="12" class="icon contacts__icon">
                 <use href="./images/icons/icons-bundle.svg#icon-envelope"></use>
               </svg>
@@ -47,9 +43,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a
-              class="link header-link contacts__item-link"
-              href="tel:+380961111111"
+            <a class="link contacts__link" href="tel:+380961111111"
               ><svg width="10" height="16" class="icon contacts__icon">
                 <use
                   href="./images/icons/icons-bundle.svg#icon-smartphone"
@@ -78,13 +72,13 @@
         </div>
       </section>
       <!--Characteristics-->
-      <section class="section qualities qualities__section">
+      <section class="section qualities section__qualities">
         <div class="container">
           <h2 class="title section__title visually-hidden">Особенности</h2>
-          <ul class="list flex-grid qualities__list">
-            <li class="flex-grid__item flex-grid__item--4-col qualities-item">
-              <div class="qualities-icon-container">
-                <svg width="65" height="70" class="icon qualities-icon">
+          <ul class="list flex-grid flex-grid--4-col qualities__list">
+            <li class="flex-grid__item qualities-item">
+              <div class="qualities-item__icon-container">
+                <svg width="65" height="70" class="icon qualities-item__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-antenna"
                   ></use>
@@ -96,9 +90,9 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col qualities-item">
-              <div class="qualities-icon-container">
-                <svg width="65" height="70" class="icon qualities-icon">
+            <li class="flex-grid__item qualities-item">
+              <div class="qualities-item__icon-container">
+                <svg width="65" height="70" class="icon qualities-item__icon">
                   <use href="./images/icons/icons-bundle.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -108,9 +102,9 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col qualities-item">
-              <div class="qualities-icon-container">
-                <svg width="65" height="70" class="icon qualities-icon">
+            <li class="flex-grid__item qualities-item">
+              <div class="qualities-item__icon-container">
+                <svg width="65" height="70" class="icon qualities-item__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-diagram"
                   ></use>
@@ -122,9 +116,9 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col qualities-item">
-              <div class="qualities-icon-container">
-                <svg width="65" height="70" class="icon qualities-icon">
+            <li class="flex-grid__item qualities-item">
+              <div class="qualities-item__icon-container">
+                <svg width="65" height="70" class="icon qualities-item__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-astronaut"
                   ></use>
@@ -145,35 +139,20 @@
       <section class="section">
         <div class="container">
           <h2 class="title section__title">Чем мы занимаемся</h2>
-          <ul class="list flex-grid activities-list">
-            <li
-              class="
-                flex-grid__item flex-grid__item--3-col
-                activities-list-item
-              "
-            >
+          <ul class="list flex-grid flex-grid--3-col activities-list">
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box1.jpg" alt="клавиатура" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Десктопные приложения</h3>
               </div>
             </li>
-            <li
-              class="
-                flex-grid__item flex-grid__item--3-col
-                activities-list-item
-              "
-            >
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box2.jpg" alt="телефон" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Мобильные приложения</h3>
               </div>
             </li>
-            <li
-              class="
-                flex-grid__item flex-grid__item--3-col
-                activities-list-item
-              "
-            >
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box3.jpg" alt="планшет" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Дизайнерские решения</h3>
@@ -186,8 +165,8 @@
       <section class="team section">
         <div class="container">
           <h2 class="title section__title">Наша команда</h2>
-          <ul class="list flex-grid team-list">
-            <li class="flex-grid__item flex-grid__item--4-col team-list-item">
+          <ul class="list flex-grid flex-grid--4-col team-list">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/igor-demianenko.jpg"
@@ -274,7 +253,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/olga-repina.jpg"
@@ -360,7 +339,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/nikolai-tarasov.jpg"
@@ -447,7 +426,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid__item flex-grid__item--4-col team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/mihail-ermakov.jpg"
@@ -539,8 +518,8 @@
       <section class="section clients-section">
         <div class="container">
           <h2 class="title section__title">Постоянные клиенты</h2>
-          <ul class="list clients-list flex-grid">
-            <li class="flex-grid__item clients-list-item">
+          <ul class="list clients-list flex-grid flex-grid--6-col">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -551,7 +530,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid__item clients-list-item">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -562,7 +541,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid__item clients-list-item">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -573,7 +552,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid__item clients-list-item">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -584,7 +563,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid__item clients-list-item">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -595,7 +574,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid__item clients-list-item">
+            <li class="flex-grid__item">
               <a
                 href="#"
                 target="_blank"
@@ -613,19 +592,19 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="address-container">
-          <a class="link logo footer__logo" href="./"
+          <a class="link logo logo__link footer__logo" href="./"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address">
-            <p class="address-item">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list contacts">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="list contacts address__contacts">
               <li class="contacts__item">
-                <a class="link footer-link" href="mailto:info@devstudio.com"
+                <a class="link contacts__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contacts__item">
-                <a class="link footer-link" href="tel:+380961111111"
+                <a class="link contacts__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -640,7 +619,7 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link"
+                class="link socials-list__link socials-list__link--dark-bg"
               >
                 <svg width="20" height="20" class="icon socials-list__icon">
                   <use
@@ -654,7 +633,7 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link"
+                class="link socials-list__link socials-list__link--dark-bg"
               >
                 <svg width="20" height="20" class="icon socials-list__icon">
                   <use
@@ -668,7 +647,7 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link"
+                class="link socials-list__link socials-list__link--dark-bg"
               >
                 <svg width="20" height="20" class="icon socials-list__icon">
                   <use
@@ -682,7 +661,7 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link"
+                class="link socials-list__link socials-list__link--dark-bg"
               >
                 <svg width="20" height="20" class="icon socials-list__icon">
                   <use
@@ -767,7 +746,7 @@
             <span class="checkbox-label__text"
               >Соглашаюсь с рассылкой и принимаю
               <a
-                class="modal-policy-link"
+                class="checkbox-label__link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"

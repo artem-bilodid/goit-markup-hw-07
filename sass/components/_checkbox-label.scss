@@ -29,3 +29,8 @@
     box-shadow: 0 0 0 2px var(--title-text-color);
   }
 }
+
+.checkbox-label__link,
+.checkbox-label__link:visited {
+  color: var(--accent-color);
+}

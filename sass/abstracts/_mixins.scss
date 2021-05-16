@@ -1,0 +1,5 @@
+@mixin gridItemWidthPerColumn($columnsCount) {
+  flex-basis: calc(
+    (100% - #{$columnsCount} * var(--flex-grid-margin)) / #{$columnsCount}
+  );
+}

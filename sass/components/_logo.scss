@@ -10,3 +10,8 @@
 .logo__accent {
   color: var(--accent-color);
 }
+
+.logo__link:hover,
+.logo__link:focus {
+  color: inherit;
+}
