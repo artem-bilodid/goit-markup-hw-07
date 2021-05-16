@@ -9,58 +9,48 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>WebStudio | Студия</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo link" href="./"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo navigation__logo link" href="./"
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="list menu">
-            <li class="menu-item">
-              <a class="link header-link current" href="./index.html">Студия</a>
+            <li class="menu__item">
+              <a
+                class="link header-link header-link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="menu-item">
+            <li class="menu__item">
               <a class="link header-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu-item">
+            <li class="menu__item">
               <a class="link header-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list contacts">
-          <li class="contacts-item">
+        <ul class="list contacts header__contacts">
+          <li class="contacts__item">
             <a
-              class="link header-link contacts-item-link"
+              class="link header-link contacts__item-link"
               href="mailto:info@devstudio.com"
-              ><svg
-                width="16"
-                height="12"
-                class="icon contacts-icon icon-envelope"
-              >
+              ><svg width="16" height="12" class="icon contacts__icon">
                 <use href="./images/icons/icons-bundle.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
+          <li class="contacts__item">
             <a
-              class="link header-link contacts-item-link"
+              class="link header-link contacts__item-link"
               href="tel:+380961111111"
-              ><svg
-                width="10"
-                height="16"
-                class="icon contacts-icon icon-smartphone"
-              >
+              ><svg width="10" height="16" class="icon contacts__icon">
                 <use
                   href="./images/icons/icons-bundle.svg#icon-smartphone"
                 ></use>
@@ -74,12 +64,12 @@
     <main>
       <!--Hero -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title title">
+        <div class="container hero__container">
+          <h1 class="title hero__title">
             Эффективные решения для вашего бизнеса
           </h1>
           <button
-            class="hero-button button primary"
+            class="hero__button button button--primary"
             type="button"
             data-modal-open
           >
@@ -88,11 +78,11 @@
         </div>
       </section>
       <!--Characteristics-->
-      <section class="qualities section">
+      <section class="section qualities qualities__section">
         <div class="container">
-          <h2 class="title section-title visually-hidden">Особенности</h2>
-          <ul class="list flex-grid qualities-list">
-            <li class="flex-grid-item qualities-list-item">
+          <h2 class="title section__title visually-hidden">Особенности</h2>
+          <ul class="list flex-grid qualities__list">
+            <li class="flex-grid__item flex-grid__item--4-col qualities-item">
               <div class="qualities-icon-container">
                 <svg width="65" height="70" class="icon qualities-icon">
                   <use
@@ -100,27 +90,27 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="qualities-list-item-title title">
+              <h3 class="flex-grid__item--4-col-title title">
                 Внимание к деталям
               </h3>
-              <p class="qualities-list-item-text">
+              <p class="flex-grid__item--4-col-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="flex-grid-item qualities-list-item">
+            <li class="flex-grid__item flex-grid__item--4-col">
               <div class="qualities-icon-container">
                 <svg width="65" height="70" class="icon qualities-icon">
                   <use href="./images/icons/icons-bundle.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="qualities-list-item-title title">Пунктуальность</h3>
-              <p class="qualities-list-item-text">
+              <h3 class="flex-grid__item--4-col-title title">Пунктуальность</h3>
+              <p class="flex-grid__item--4-col-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="flex-grid-item qualities-list-item">
+            <li class="flex-grid__item flex-grid__item--4-col">
               <div class="qualities-icon-container">
                 <svg width="65" height="70" class="icon qualities-icon">
                   <use
@@ -128,13 +118,13 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="qualities-list-item-title title">Планирование</h3>
-              <p class="qualities-list-item-text">
+              <h3 class="flex-grid__item--4-col-title title">Планирование</h3>
+              <p class="flex-grid__item--4-col-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="flex-grid-item qualities-list-item">
+            <li class="flex-grid__item flex-grid__item--4-col">
               <div class="qualities-icon-container">
                 <svg width="65" height="70" class="icon qualities-icon">
                   <use
@@ -142,10 +132,10 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="qualities-list-item-title title">
+              <h3 class="flex-grid__item--4-col-title title">
                 Современные технологии
               </h3>
-              <p class="qualities-list-item-text">
+              <p class="flex-grid__item--4-col-text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -156,21 +146,21 @@
       <!--What we do-->
       <section class="section">
         <div class="container">
-          <h2 class="title section-title">Чем мы занимаемся</h2>
+          <h2 class="title section__title">Чем мы занимаемся</h2>
           <ul class="list flex-grid activities-list">
-            <li class="flex-grid-item activities-list-item">
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box1.jpg" alt="клавиатура" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Десктопные приложения</h3>
               </div>
             </li>
-            <li class="flex-grid-item activities-list-item">
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box2.jpg" alt="телефон" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Мобильные приложения</h3>
               </div>
             </li>
-            <li class="flex-grid-item activities-list-item">
+            <li class="flex-grid__item activities-list-item">
               <img src="./images/box3.jpg" alt="планшет" width="370" />
               <div class="activity-overlay">
                 <h3 class="activity-title">Дизайнерские решения</h3>
@@ -182,9 +172,9 @@
       <!--Our team-->
       <section class="team section">
         <div class="container">
-          <h2 class="title section-title">Наша команда</h2>
+          <h2 class="title section__title">Наша команда</h2>
           <ul class="list flex-grid team-list">
-            <li class="flex-grid-item team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/igor-demianenko.jpg"
@@ -255,7 +245,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid-item team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/olga-repina.jpg"
@@ -325,7 +315,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid-item team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/nikolai-tarasov.jpg"
@@ -396,7 +386,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-grid-item team-list-item">
+            <li class="flex-grid__item team-list-item">
               <img
                 class="person-portrait"
                 src="./images/staff/mihail-ermakov.jpg"
@@ -471,9 +461,9 @@
       </section>
       <section class="section clients-section">
         <div class="container">
-          <h2 class="title section-title">Постоянные клиенты</h2>
+          <h2 class="title section__title">Постоянные клиенты</h2>
           <ul class="list clients-list flex-grid">
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -484,7 +474,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -495,7 +485,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -506,7 +496,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -517,7 +507,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -528,7 +518,7 @@
                 </svg>
               </a>
             </li>
-            <li class="flex-grid-item clients-list-item">
+            <li class="flex-grid__item clients-list-item">
               <a
                 href="#"
                 target="_blank"
@@ -547,17 +537,17 @@
       <div class="container footer-container">
         <div class="address-container">
           <a class="logo link" href="./"
-            ><span class="accent">Web</span>Studio</a
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address">
             <p class="address-item">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="list contacts">
-              <li class="contacts-item">
+              <li class="contacts__item">
                 <a class="link footer-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contacts-item">
+              <li class="contacts__item">
                 <a class="link footer-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
@@ -636,7 +626,10 @@
             class="subscribe-form"
           >
             <input class="subscribe-input" type="email" placeholder="E-mail" />
-            <button type="submit" class="button primary subscribe-button">
+            <button
+              type="submit"
+              class="button button--primary subscribe-button"
+            >
               <span class="subscribe-button-text">Подписаться</span>
               <svg width="24" height="24" class="icon subscribe-button-icon">
                 <use href="./images/icons/icons-bundle.svg#icon-send"></use>
