@@ -763,8 +763,7 @@ img {
   transition: var(--animate-color), var(--animate-background-color);
 }
 
-.socials-list__link:hover,
-.socials-list__link:focus {
+.socials-list__link:hover, .socials-list__link:focus {
   color: var(--background-primary-color);
   background-color: var(--accent-color);
 }
@@ -774,8 +773,7 @@ img {
   color: var(--background-dark-primary-text-color);
 }
 
-.socials-list__link--dark-bg:hover,
-.socials-list__link--dark-bg:focus {
+.socials-list__link--dark-bg:hover, .socials-list__link--dark-bg:focus {
   background-color: var(--accent-color);
 }
 
@@ -830,8 +828,7 @@ img {
   transition: var(--animate-color), var(--animate-border-color);
 }
 
-.client__link:hover,
-.client__link:focus {
+.client__link:hover, .client__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -1026,20 +1023,19 @@ img {
   transition: var(--animate-transform);
 }
 
+.project__link:hover .project__image-overlay,
+.project__link:focus .project__image-overlay {
+  transform: translatey(0);
+}
+
 .project__link {
   display: block;
   transition: var(--animate-shadow);
 }
 
-.project__link:hover,
-.project__link:focus {
+.project__link:hover, .project__link:focus {
   color: inherit;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project__link:hover .project__image-overlay,
-.project__link:focus .project__image-overlay {
-  transform: translatey(0);
 }
 
 .project__name {

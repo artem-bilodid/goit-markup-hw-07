@@ -5,26 +5,27 @@
 
 .menu__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.menu__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu__link--current {
-  color: var(--accent-color);
-}
 .menu__link {
   @extend %animated-color-link;
 }
 
-.menu__link--current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+.menu__link--current {
+  color: var(--accent-color);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -33px;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
 }

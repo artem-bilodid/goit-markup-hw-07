@@ -29,22 +29,23 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: var(--animate-transform);
+
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translatey(0);
+  }
 }
 
 .project__link {
   display: block;
   transition: var(--animate-shadow);
-}
 
-.project__link:hover,
-.project__link:focus {
-  color: inherit;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project__link:hover .project__image-overlay,
-.project__link:focus .project__image-overlay {
-  transform: translatey(0);
+  &:hover,
+  &:focus {
+    color: inherit;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project__name {
