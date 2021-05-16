@@ -1,0 +1,21 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__form-label {
+  margin-bottom: 10px;
+}
+
+.order-form__form-label:last-child {
+  margin-bottom: 20px;
+}
+
+.order-form__checkbox-label {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.order-form__send-button {
+  align-self: center;
+}

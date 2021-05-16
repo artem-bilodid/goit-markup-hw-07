@@ -1,0 +1,19 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--flex-grid-margin));
+  margin-left: calc(-1 * var(--flex-grid-margin));
+}
+
+.flex-grid__item {
+  margin-top: var(--flex-grid-margin);
+  margin-left: var(--flex-grid-margin);
+
+  &--3-col {
+    flex-basis: calc((100% - 3 * var(--flex-grid-margin)) / 3);
+  }
+
+  &--4-col {
+    flex-basis: calc((100% - 4 * var(--flex-grid-margin)) / 4);
+  }
+}
