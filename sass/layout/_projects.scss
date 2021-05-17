@@ -1,3 +1,11 @@
+.projects__list {
+  @include gridContainer();
+}
+
+.project__item {
+  @include gridItem(3);
+}
+
 .project__label {
   padding: 20px 24px;
   border-right: 1px solid var(--portfolio-border-color);

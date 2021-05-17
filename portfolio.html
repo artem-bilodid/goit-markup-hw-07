@@ -16,37 +16,35 @@
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a class="logo navigation__logo link logo__link" href="./"
+          <a class="logo navigation__logo" href="./"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="list menu">
+          <ul class="menu">
             <li class="menu__item">
-              <a class="link menu__link" href="./index.html">Студия</a>
+              <a class="menu__link" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
-              <a
-                class="link menu__link menu__link--current"
-                href="./portfolio.html"
+              <a class="menu__link menu__link--current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
             <li class="menu__item">
-              <a class="link menu__link" href="">Контакты</a>
+              <a class="menu__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list contacts header__contacts">
+        <ul class="header__contacts">
           <li class="contacts__item">
-            <a class="link contacts__link" href="mailto:info@devstudio.com"
-              ><svg width="16" height="12" class="icon contacts__icon">
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              ><svg width="16" height="12" class="contacts__icon">
                 <use href="./images/icons/icons-bundle.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
-            <a class="link contacts__link" href="tel:+380961111111"
-              ><svg width="10" height="16" class="icon contacts__icon">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg width="10" height="16" class="contacts__icon">
                 <use
                   href="./images/icons/icons-bundle.svg#icon-smartphone"
                 ></use>
@@ -61,7 +59,7 @@
       <section class="section">
         <div class="container">
           <h1 class="title visually-hidden">Портфолио</h1>
-          <ul class="list filters">
+          <ul class="filters">
             <li class="filters__item">
               <button class="button" type="button">Все</button>
             </li>
@@ -78,8 +76,8 @@
               <button class="button" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list flex-grid flex-grid--3-col">
-            <li class="flex-grid__item project">
+          <ul class="projects__list">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -107,7 +105,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -136,7 +134,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -163,7 +161,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -190,7 +188,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -217,7 +215,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -246,7 +244,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -273,7 +271,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -300,7 +298,7 @@
                 </div>
               </a>
             </li>
-            <li class="flex-grid__item project">
+            <li class="project__item">
               <a
                 class="link project__link"
                 target="_blank"
@@ -334,19 +332,19 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="address-container">
-          <a class="link logo logo--dark-bg logo__link footer__logo" href="./"
+          <a class="logo logo--dark-bg footer__logo" href="./"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list contacts address__contacts">
+            <ul class="contacts address__contacts">
               <li class="contacts__item">
-                <a class="link contacts__link" href="mailto:info@devstudio.com"
+                <a class="contacts__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contacts__item">
-                <a class="link contacts__link" href="tel:+380961111111"
+                <a class="contacts__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -355,15 +353,15 @@
         </div>
         <div class="join-us-container">
           <h2 class="footer__header">присоединяйтесь</h2>
-          <ul class="list socials-list">
+          <ul class="socials-list">
             <li class="socials-list__item">
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link socials-list__link--dark-bg"
+                class="socials-list__link socials-list__link--dark-bg"
               >
-                <svg width="20" height="20" class="icon socials-list__icon">
+                <svg width="20" height="20" class="socials-list__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-instagram"
                   ></use>
@@ -375,9 +373,9 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link socials-list__link--dark-bg"
+                class="socials-list__link socials-list__link--dark-bg"
               >
-                <svg width="20" height="20" class="icon socials-list__icon">
+                <svg width="20" height="20" class="socials-list__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-twitter"
                   ></use>
@@ -389,9 +387,9 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link socials-list__link--dark-bg"
+                class="socials-list__link socials-list__link--dark-bg"
               >
-                <svg width="20" height="20" class="icon socials-list__icon">
+                <svg width="20" height="20" class="socials-list__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-facebook"
                   ></use>
@@ -403,9 +401,9 @@
                 href="#"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link socials-list__link socials-list__link--dark-bg"
+                class="socials-list__link socials-list__link--dark-bg"
               >
-                <svg width="20" height="20" class="icon socials-list__icon">
+                <svg width="20" height="20" class="socials-list__icon">
                   <use
                     href="./images/icons/icons-bundle.svg#icon-linkedin"
                   ></use>

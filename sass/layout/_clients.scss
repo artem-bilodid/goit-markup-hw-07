@@ -1,4 +1,13 @@
+.clients__list {
+  @include gridContainer();
+}
+
+.clients__item {
+  @include gridItem(6);
+}
+
 .client__link {
+  @extend %link;
   display: flex;
   width: 100%;
   height: 92px;

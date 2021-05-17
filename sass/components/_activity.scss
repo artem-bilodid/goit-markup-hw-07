@@ -1,4 +1,9 @@
+.activities-list {
+  @include gridContainer();
+}
+
 .activity {
+  @include gridItem(3);
   position: relative;
 }
 
