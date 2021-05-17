@@ -3,14 +3,11 @@
 }
 
 .person__name {
+  @extend %title;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .person__position {
   margin-bottom: 16px;
-}
-
-.person__socials-list {
-  justify-content: center;
 }

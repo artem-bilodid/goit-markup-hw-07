@@ -4,12 +4,13 @@
 }
 
 .section__title {
+  @extend %title;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.section__qualities {
+.section__features {
   padding-bottom: 0;
 }

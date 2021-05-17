@@ -5,6 +5,11 @@
   line-height: 1.19;
 
   color: var(--logo-header-color);
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
 }
 
 .logo--dark-bg {
@@ -13,9 +18,4 @@
 
 .logo__accent {
   color: var(--accent-color);
-}
-
-.logo__link:hover,
-.logo__link:focus {
-  color: inherit;
 }

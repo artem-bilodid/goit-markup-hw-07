@@ -1,5 +1,13 @@
-@mixin gridItemWidthPerColumn($columnsCount) {
-  flex-basis: calc(
-    (100% - #{$columnsCount} * var(--flex-grid-margin)) / #{$columnsCount}
-  );
+@mixin gridContainer($margin: var(--flex-grid-margin)) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * #{$margin});
+  margin-left: calc(-1 * #{$margin});
+}
+
+@mixin gridItem($columnsCount, $margin: var(--flex-grid-margin)) {
+  margin-top: #{$margin};
+  margin-left: #{$margin};
+
+  flex-basis: calc((100% - #{$columnsCount} * #{$margin}) / #{$columnsCount});
 }

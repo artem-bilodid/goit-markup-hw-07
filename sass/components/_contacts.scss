@@ -1,5 +1,6 @@
 .contacts__link {
   @extend %animated-color-link;
+  @extend %link;
   display: flex;
   align-items: center;
 }

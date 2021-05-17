@@ -1,4 +1,13 @@
-.qualities-item__title {
+.features {
+  @include gridContainer();
+}
+
+.features-item {
+  @include gridItem(4);
+}
+
+.features-item__title {
+  @extend %title;
   margin-bottom: 10px;
   font-size: 14px;
 
@@ -7,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.qualities-item__icon-container {
+.features-item__icon-container {
   display: flex;
   justify-content: center;
   padding-top: 25px;

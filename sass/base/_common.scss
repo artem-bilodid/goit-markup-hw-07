@@ -18,6 +18,11 @@ body {
   background-color: var(--background-primary-color);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -25,6 +30,13 @@ h4,
 h5,
 h6,
 p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -42,28 +54,6 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.title {
-  margin: 0;
-  padding: 0;
-  color: var(--title-text-color);
-}
-
-.link {
-  color: inherit;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
 }
 
 .container {

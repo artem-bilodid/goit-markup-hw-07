@@ -10,14 +10,14 @@
   margin-left: var(--flex-grid-margin);
 
   .flex-grid--3-col & {
-    @include gridItemWidthPerColumn($columnsCount: 3);
+    @include gridItem($columnsCount: 3);
   }
 
   .flex-grid--4-col & {
-    @include gridItemWidthPerColumn($columnsCount: 4);
+    @include gridItem($columnsCount: 4);
   }
 
   .flex-grid--6-col & {
-    @include gridItemWidthPerColumn($columnsCount: 6);
+    @include gridItem($columnsCount: 6);
   }
 }
