@@ -1,4 +1,7 @@
 .hero {
+  display: flex;
+  justify-content: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -26,6 +29,7 @@
 }
 
 .hero__title {
+  @extend %title;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;

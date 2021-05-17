@@ -35,7 +35,7 @@
   margin-right: 30px;
 }
 
-.section__title, .features-item__title, .person__name {
+.hero__title, .section__title, .features-item__title, .person__name {
   color: var(--title-text-color);
 }
 
@@ -439,6 +439,8 @@ img {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -641,7 +643,7 @@ img {
   margin-bottom: 30px;
 }
 
-.order-form__send-button {
+.order-form__button {
   align-self: center;
 }
 
@@ -789,13 +791,13 @@ img {
   background-color: var(--accent-color);
 }
 
-.button {
-  font-size: 16px;
-  line-height: 1.62;
-  font-weight: 500;
+.button, .order-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -805,22 +807,30 @@ img {
   transition: var(--animate-color), var(--animate-background-color), var(--animate-border-color), var(--animate-shadow);
 }
 
-.button--primary, .button:focus,
-.button:hover {
+.button:focus, .order-form__button:focus, .button:hover, .order-form__button:hover {
   border-color: var(--accent-color);
   color: var(--primary-button-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button--big {
+.button--primary, .order-form__button {
+  height: 50px;
+  min-width: 200px;
   font-weight: 700;
-  padding: 10px 32px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  box-shadow: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   align-self: center;
+  border-color: var(--accent-color);
+  color: var(--primary-button-text-color);
+  background-color: var(--accent-color);
+}
+
+.button__icon {
+  margin-left: 10px;
+  --color5: currentColor;
 }
 
 .button-close {
@@ -840,37 +850,6 @@ img {
 
 .button-close__icon {
   --color6: currentColor;
-}
-
-.send-button {
-  min-width: 200px;
-  height: 50px;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.subscribe-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  min-width: 200px;
-  padding: 10px 28px;
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.subscribe-button__text {
-  margin-right: 10px;
-}
-
-.subscribe-button__icon {
-  --color5: currentColor;
 }
 
 .socials-list {
